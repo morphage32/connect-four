@@ -15,7 +15,6 @@ class Board
   def add_move(number, symbol)
     i = 5
     j = number - 1
-
     while i >= 0 do
       if @grid[i][j].nil?
         @grid[i][j] = symbol
@@ -54,7 +53,6 @@ class Board
       j = 0
       i -= 1
     end
-
     # check vertical
     i = 5
     j = 0
@@ -71,7 +69,6 @@ class Board
       j = 0
       i -= 1
     end
-
     # check diagonal
     i = 5
     j = 0
@@ -99,7 +96,6 @@ class Board
       j = 0
       i -= 1
     end
-
     return "none"
   end
 
